@@ -1,0 +1,11 @@
+header(class="Header")
+  //
+    logo
+  div(class="Header-left")
+    picture(class="Logo")
+      source(srcset="./public/media/images/truekes-1x.png 1x, ./public/media/images/truekes-2x.png 2x", media="(min-width: 900px)" height="50")
+      source(srcset="./public/media/images/shortlogo-1x.png 1x, ./public/media/images/shortlogo-2x.png 2x", media="(max-width: 900px)" height="50")
+      img(srcset="./public/media/images/truekes-1x.png 1x, ./public/media/images/truekes-2x.png 2x", alt="Truekes" height="50")
+  div(class="Header-right")
+    include ../search/template.jade
+    include ../menu/template.jade

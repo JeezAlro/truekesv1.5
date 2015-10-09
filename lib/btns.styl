@@ -1,0 +1,113 @@
+greenflat = #8DC63F
+dgreenflat = #2D8B42
+blueflat = #009EDF
+dblueflat = #0C5C86
+blueflatf = #112C4A
+dgrayflat = #3D4351
+redflat = #DD4B39
+dredflat = #BA0613
+yellowflat = #F0C42C
+dyellowflat = #FFA200
+grayflat = #CCCCCC
+lgrayflat = #F9F9F9
+
+btn(colorA = grayflat, colorB = dgrayflat, width = 100px)
+	background colorA
+	border-bottom 4px solid colorB
+	width width
+	&:before
+		background colorB
+.Btn
+	position relative
+	font-weight bold
+	color white
+	margin 2px 0
+	transform translateZ(0)
+	backface-visibility: hidden
+	padding 0 .5em
+	box-sizing border-box
+	text-align center
+	line-height 46px
+	height 46px
+	display inline-block
+	transition all .2s
+	&:before
+		content ""
+		position absolute
+		top 0
+		left 0 
+		right 0
+		bottom 0
+		z-index -1
+		transform scaleY(0)
+		transform-origin 50% 100%
+		transition all 0.2s
+		opacity 0
+		transition-timing-function ease-out
+	&:hover
+		color white
+		&:before
+			transform scaleY(1)	
+			opacity 1	
+	btn()
+	&.Btn--grayXS
+		btn(grayflat, dgrayflat, 46px)
+	&.Btn--grayS
+		btn(grayflat, dgrayflat, 100px)
+	&.Btn--grayM
+		btn(grayflat, dgrayflat, 150px)
+	&.Btn--grayL
+		btn(grayflat, dgrayflat, 200px)
+	&.Btn--grayR
+		btn(grayflat, dgrayflat, 100%)
+	&.Btn--redXS
+		btn(redflat, dredflat, 46px)
+	&.Btn--redS
+		btn(redflat, dredflat, 100px)
+	&.Btn--redM
+		btn(redflat, dredflat, 150px)
+	&.Btn--redL
+		btn(redflat, dredflat, 200px)
+	&.Btn--redR
+		btn(redflat, dredflat, 100%)
+	&.Btn--greenXS
+		btn(greenflat, dgreenflat, 46px)
+	&.Btn--greenS
+		btn(greenflat, dgreenflat, 100px)
+	&.Btn--greenM
+		btn(greenflat, dgreenflat, 150px)
+	&.Btn--greenL
+		btn(greenflat, dgreenflat, 200px)
+	&.Btn--greenR
+		btn(greenflat, dgreenflat, 100%)	
+	&.Btn--blueXS
+		btn(blueflat, dblueflat, 46px)
+	&.Btn--blueS
+		btn(blueflat, dblueflat, 100px)
+	&.Btn--blueM
+		btn(blueflat, dblueflat, 150px)
+	&.Btn--blueL
+		btn(blueflat, dblueflat, 200px)
+	&.Btn--blueR
+		btn(blueflat, dblueflat, 100%)
+	&.Btn--dblueXS
+		btn(dblueflat, blueflatf, 46px)
+	&.Btn--dblueS
+		btn(dblueflat, blueflatf, 100px)
+	&.Btn--dblueM
+		btn(dblueflat, blueflatf, 150px)
+	&.Btn--dblueL
+		btn(dblueflat, blueflatf, 200px)
+	&.Btn--dblueR
+		btn(dblueflat, blueflatf, 100%)
+	&.Btn--yellowXS
+		btn(yellowflat, dyellowflat, 46px)
+	&.Btn--yellowS
+		btn(yellowflat, dyellowflat, 100px)
+	&.Btn--yellowM
+		btn(yellowflat, dyellowflat, 150px)
+	&.Btn--yellowL
+		btn(yellowflat, dyellowflat, 200px)
+	&.Btn--yellowR
+		btn(yellowflat, dyellowflat, 100%)
+			

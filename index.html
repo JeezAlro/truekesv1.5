@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-ascale=1, user-scalable=no">
+    <title>Truekes El Salvador</title>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async></script>
+    <link rel="stylesheet" href="/public/css/styles.css">
+  </head>
+  <body>
+    <header class="Header">
+      <!--logo
+      -->
+      <div class="Header-left">
+        <picture class="Logo">
+          <source srcset="./public/media/images/truekes-1x.png 1x, ./public/media/images/truekes-2x.png 2x" media="(min-width: 900px)" height="50">
+          <source srcset="./public/media/images/shortlogo-1x.png 1x, ./public/media/images/shortlogo-2x.png 2x" media="(max-width: 900px)" height="50"><img srcset="./public/media/images/truekes-1x.png 1x, ./public/media/images/truekes-2x.png 2x" alt="Truekes" height="50">
+        </picture>
+      </div>
+      <div class="Header-right">
+        <div class="Search">
+          <select title="Selecciona una categoría para limitar la búsqueda" id="Search-select" name="Search-select" class="Search-select">
+            <option seleted="slected" value="0">Todo </option>
+            <option value="1">categoría 1</option>
+            <option value="2">categoría 2 </option>
+            <option value="3">categoría 3 </option>
+          </select>
+          <input type="text" id="Search-textBtn" placeholder="Buscar" class="Search-textBtn">
+          <input type="submit" id="Search-submitBtn" value="Buscar" class="Search-submitBtn">
+        </div>
+        <nav class="Menu">
+          <!--menu without logging
+          -->
+          <ul class="Menu-container">
+            <li class="Menu-option"><a href="#" class="Btn Btn--blue">Publicar</a></li>
+            <li class="Menu-option"><a href="#" class="Btn Btn--green">Ingresar</a></li>
+          </ul>
+          <!--menu at login
+          -->
+          <ul class="Menu-container">
+            <li class="Menu-option">
+              <div class="Notif">
+                <div class="Notif-option"><a href="#">Mensajes</a>
+                  <div class="Notif-layout">
+                    <ul class="Messages">
+                      <!--messages user
+                      -->
+                      <li class="Messages-item">
+                        <picture class="Messages-image">
+                          <source srcset="https://randomuser.me/api/portraits/med/men/95.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/men/95.jpg" alt="Marc Howard" width="50" height="50">
+                        </picture>
+                        <div class="Messages-author"><span>Marc Howard</span></div>
+                        <div class="Messages-snippet"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, iure officiis ex quia inventore laudantium culpa eveniet animi aliquid. Molestias consequuntur esse reprehenderit sit, similique inventore laborum, architecto laboriosam aliquid?</span></div>
+                      </li>
+                      <li class="Messages-item">
+                        <picture class="Messages-image">
+                          <source srcset="https://randomuser.me/api/portraits/med/women/39.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/women/39.jpg" alt="Carmen Dunn" width="50" height="50">
+                        </picture>
+                        <div class="Messages-author"><span>Marc Howard</span></div>
+                        <div class="Messages-snippet"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, iure officiis ex quia inventore laudantium culpa eveniet animi aliquid. Molestias consequuntur esse reprehenderit sit, similique inventore laborum, architecto laboriosam aliquid?</span></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="Notif-option"><a href="#">Notificaciones</a>
+                  <div class="Notif-layout">
+                    <ul class="Notifications">
+                      <!--Notifications
+                      -->
+                      <li class="Notifications-item">
+                        <picture class="Notifications-image">
+                          <source srcset="https://randomuser.me/api/portraits/med/women/34.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/women/34.jpg" alt="Marc Howard" width="50" height="50">
+                        </picture>
+                        <div class="Notifications-author"><span>Taylor Howard</span></div>
+                        <div class="Notifications-snippet"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, iure officiis ex quia inventore laudantium culpa eveniet animi aliquid. Molestias consequuntur esse reprehenderit sit, similique inventore laborum, architecto laboriosam aliquid?</span></div>
+                      </li>
+                      <li class="Notifications-item">
+                        <picture class="Notifications-image">
+                          <source srcset="https://randomuser.me/api/portraits/med/men/45.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/men/45.jpg" alt="Marc Howard" width="50" height="50">
+                        </picture>
+                        <div class="Notifications-author"><span>Taylor Howard</span></div>
+                        <div class="Notifications-snippet"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, iure officiis ex quia inventore laudantium culpa eveniet animi aliquid. Molestias consequuntur esse reprehenderit sit, similique inventore laborum, architecto laboriosam aliquid?</span></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
