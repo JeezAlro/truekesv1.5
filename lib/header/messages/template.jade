@@ -1,0 +1,25 @@
+div(class="Messages")
+  ul(class="Messages-wrap")
+    //
+      messages user
+    li(class="Messages-container new")
+      a(href="#" class="Messages-item")
+        picture(class="Messages-avatar")
+          source(srcset="https://randomuser.me/api/portraits/med/men/95.jpg", width="50", height="50")
+          img(srcset="https://randomuser.me/api/portraits/med/men/95.jpg", alt="Marc Howard", width="50", height="50")
+        div(class="Messages-preview")
+          div(class="Messages-author")
+            span Marc Howard
+          div(class="Messages-snippet")
+            span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, iure officiis ex quia inventore laudantium culpa eveniet animi aliquid. Molestias consequuntur esse reprehenderit sit, similique inventore laborum, architecto laboriosam aliquid?
+    li(class="Messages-container")
+      a(href="#" class="Messages-item")
+        picture(class="Messages-avatar")
+          source(srcset="https://randomuser.me/api/portraits/med/women/82.jpg", width="50", height="50")
+          img(srcset="https://randomuser.me/api/portraits/med/women/82.jpg", alt="Carmen Dunn", width="50", height="50")
+        div(class="Messages-preview")
+          div(class="Messages-author")
+            span Irene Rhodes
+          div(class="Messages-snippet") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, iure officiis ex quia inventore laudantium culpa eveniet animi aliquid. Molestias consequuntur esse reprehenderit sit, similique inventore laborum, architecto laboriosam aliquid?
+  div(class="Messages-empty")
+    span() no hay mas mensajes...

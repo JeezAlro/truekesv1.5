@@ -1,0 +1,48 @@
+greenflat = #8DC63F
+dgreenflat = #2D8B42
+blueflat = #009EDF
+dblueflat = #0C5C86
+blueflatf = #112C4A
+dgrayflat = #3D4351
+redflat = #DD4B39
+dredflat = #BA0613
+yellowflat = #F0C42C
+dyellowflat = #FFA200
+grayflat = #CCCCCC
+lgrayflat = #F9F9F9
+blackflat = #181D1F
+
+.Notif
+	display flex
+	height 50px
+	&-option
+		height 50px
+		&.active
+			background blackflat
+			>.Notif-layout
+				display block
+				opacity 1
+	&-layout
+		display none
+		position absolute
+		top 100%
+		right 0
+		width 100%
+		height 50vh
+		max-height 250px
+		border .2em solid blackflat
+		overflow-y scroll
+		background lgrayflat
+		max-width 320px
+		opacity 0
+		transition all 2s
+::scrollbar-thumb
+	background red
+@media (min-width 560px)
+	.Notif
+		&-option
+			position relative
+		&-layout
+			width 320px
+			right -100%
+			min-height 

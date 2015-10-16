@@ -1,0 +1,39 @@
+greenflat = #8DC63F
+dgreenflat = #2D8B42
+blueflat = #009EDF
+dblueflat = #0C5C86
+blueflatf = #112C4A
+dgrayflat = #3D4351
+redflat = #DD4B39
+dredflat = #BA0613
+yellowflat = #F0C42C
+dyellowflat = #FFA200
+grayflat = #CCCCCC
+lgrayflat = #F9F9F9
+blackflat = #181D1F
+.Menu
+	order 1
+	height 50px
+	&-container
+		height 50px
+		margin 0
+		list-style none
+		padding-left 4px
+		display flex
+		justify-content flex-end
+	&-btntext
+		display none
+		margin-right .5em
+	&-option
+		margin-left .2em
+		display flex
+		&.mn 
+			margin-left 0px
+@media (min-width 480px)
+	.Menu
+		&-btntext
+			display initial
+@media (min-width 1280px)
+	.Menu
+		order 2
+

@@ -2,10 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-ascale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Truekes El Salvador</title>
-    <script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async></script>
-    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="./public/css/fonts/flaticon.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
   </head>
   <body>
     <header class="Header">
@@ -13,76 +13,129 @@
       -->
       <div class="Header-left">
         <picture class="Logo">
-          <source srcset="./public/media/images/truekes-1x.png 1x, ./public/media/images/truekes-2x.png 2x" media="(min-width: 900px)" height="50">
-          <source srcset="./public/media/images/shortlogo-1x.png 1x, ./public/media/images/shortlogo-2x.png 2x" media="(max-width: 900px)" height="50"><img srcset="./public/media/images/truekes-1x.png 1x, ./public/media/images/truekes-2x.png 2x" alt="Truekes" height="50">
+          <source srcset="./public/media/images/truekes-1x.png 1x, ./public/media/images/truekes-2x.png 2x" media="(min-width: 965px)" height="50">
+          <source srcset="./public/media/images/shortlogo-1x.png 1x, ./public/media/images/shortlogo-2x.png 2x" media="(max-width: 965px)" height="50"><img srcset="./public/media/images/truekes-1x.png 1x, ./public/media/images/truekes-2x.png 2x" alt="Truekes" height="50">
         </picture>
       </div>
       <div class="Header-right">
         <div class="Search">
-          <select title="Selecciona una categoría para limitar la búsqueda" id="Search-select" name="Search-select" class="Search-select">
-            <option seleted="slected" value="0">Todo </option>
-            <option value="1">categoría 1</option>
-            <option value="2">categoría 2 </option>
-            <option value="3">categoría 3 </option>
-          </select>
-          <input type="text" id="Search-textBtn" placeholder="Buscar" class="Search-textBtn">
-          <input type="submit" id="Search-submitBtn" value="Buscar" class="Search-submitBtn">
+          <form action="" class="Search-form">
+            <select title="Selecciona una categoría para limitar la búsqueda" id="Search-select" name="Search-select" class="Search-select">
+              <option seleted="slected" value="0">Todo </option>
+              <option value="1">categoría 1</option>
+              <option value="2">categoría 2 </option>
+              <option value="3">categoría 3 </option>
+            </select>
+            <input type="text" name="Search-textBtn" id="Search-textBtn" placeholder="Buscar" class="Search-textBtn">
+            <label for="Search-submitBtn" class="Btn Btn--blueXS Search-submitBtn"><span class="flaticon-search"></span></label>
+            <input type="submit" id="Search-submitBtn" value="Buscar" class="display-none">
+          </form>
         </div>
         <nav class="Menu">
           <!--menu without logging
           -->
-          <ul class="Menu-container">
-            <li class="Menu-option"><a href="#" class="Btn Btn--blue">Publicar</a></li>
-            <li class="Menu-option"><a href="#" class="Btn Btn--green">Ingresar</a></li>
+          <ul class="Menu-container display-none">
+            <li class="Menu-option"><a href="#" class="Btn Btn--blueR"><span class="Menu-btntext">Publicar</span><span class="flaticon-post3 margin-none"></span></a></li>
+            <li class="Menu-option"><a href="#" class="Btn Btn--greenR"><span>Ingresar</span><span class="flaticon-user margin-none"></span></a></li>
           </ul>
           <!--menu at login
           -->
           <ul class="Menu-container">
+            <li class="Menu-option"><a href="#" class="Btn Btn--blueR"><span class="Menu-btntext">Publicar</span><span class="flaticon-post3 margin-none"></span></a></li>
             <li class="Menu-option">
               <div class="Notif">
-                <div class="Notif-option"><a href="#">Mensajes</a>
+                <div class="Menu-item Notif-option"><a href="#" class="Btn Btn--transparentR prevent"><span class="flaticon-message"></span><span class="notifcount pending">1</span></a>
                   <div class="Notif-layout">
-                    <ul class="Messages">
-                      <!--messages user
-                      -->
-                      <li class="Messages-item">
-                        <picture class="Messages-image">
-                          <source srcset="https://randomuser.me/api/portraits/med/men/95.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/men/95.jpg" alt="Marc Howard" width="50" height="50">
-                        </picture>
-                        <div class="Messages-author"><span>Marc Howard</span></div>
-                        <div class="Messages-snippet"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, iure officiis ex quia inventore laudantium culpa eveniet animi aliquid. Molestias consequuntur esse reprehenderit sit, similique inventore laborum, architecto laboriosam aliquid?</span></div>
-                      </li>
-                      <li class="Messages-item">
-                        <picture class="Messages-image">
-                          <source srcset="https://randomuser.me/api/portraits/med/women/39.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/women/39.jpg" alt="Carmen Dunn" width="50" height="50">
-                        </picture>
-                        <div class="Messages-author"><span>Marc Howard</span></div>
-                        <div class="Messages-snippet"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, iure officiis ex quia inventore laudantium culpa eveniet animi aliquid. Molestias consequuntur esse reprehenderit sit, similique inventore laborum, architecto laboriosam aliquid?</span></div>
-                      </li>
-                    </ul>
+                    <div class="Messages">
+                      <ul class="Messages-wrap">
+                        <!--messages user
+                        -->
+                        <li class="Messages-container new"><a href="#" class="Messages-item">
+                            <picture class="Messages-avatar">
+                              <source srcset="https://randomuser.me/api/portraits/med/men/95.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/men/95.jpg" alt="Marc Howard" width="50" height="50">
+                            </picture>
+                            <div class="Messages-preview">
+                              <div class="Messages-author"><span>Marc Howard</span></div>
+                              <div class="Messages-snippet"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, iure officiis ex quia inventore laudantium culpa eveniet animi aliquid. Molestias consequuntur esse reprehenderit sit, similique inventore laborum, architecto laboriosam aliquid?</span></div>
+                            </div></a></li>
+                        <li class="Messages-container"><a href="#" class="Messages-item">
+                            <picture class="Messages-avatar">
+                              <source srcset="https://randomuser.me/api/portraits/med/women/82.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/women/82.jpg" alt="Carmen Dunn" width="50" height="50">
+                            </picture>
+                            <div class="Messages-preview">
+                              <div class="Messages-author"><span>Irene Rhodes</span></div>
+                              <div class="Messages-snippet">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, iure officiis ex quia inventore laudantium culpa eveniet animi aliquid. Molestias consequuntur esse reprehenderit sit, similique inventore laborum, architecto laboriosam aliquid?</div>
+                            </div></a></li>
+                      </ul>
+                      <div class="Messages-empty"><span>no hay mas mensajes...</span></div>
+                    </div>
                   </div>
                 </div>
-                <div class="Notif-option"><a href="#">Notificaciones</a>
+                <div class="Menu-item Notif-option"><a href="#" class="Btn Btn--transparentR prevent"><span class="flaticon-bell"></span><span class="notifcount pending">2</span></a>
                   <div class="Notif-layout">
-                    <ul class="Notifications">
-                      <!--Notifications
-                      -->
-                      <li class="Notifications-item">
-                        <picture class="Notifications-image">
-                          <source srcset="https://randomuser.me/api/portraits/med/women/34.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/women/34.jpg" alt="Marc Howard" width="50" height="50">
-                        </picture>
-                        <div class="Notifications-author"><span>Taylor Howard</span></div>
-                        <div class="Notifications-snippet"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, iure officiis ex quia inventore laudantium culpa eveniet animi aliquid. Molestias consequuntur esse reprehenderit sit, similique inventore laborum, architecto laboriosam aliquid?</span></div>
-                      </li>
-                      <li class="Notifications-item">
-                        <picture class="Notifications-image">
-                          <source srcset="https://randomuser.me/api/portraits/med/men/45.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/men/45.jpg" alt="Marc Howard" width="50" height="50">
-                        </picture>
-                        <div class="Notifications-author"><span>Taylor Howard</span></div>
-                        <div class="Notifications-snippet"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, iure officiis ex quia inventore laudantium culpa eveniet animi aliquid. Molestias consequuntur esse reprehenderit sit, similique inventore laborum, architecto laboriosam aliquid?</span></div>
-                      </li>
-                    </ul>
+                    <div class="Notifications">
+                      <ul class="Notifications-wrap">
+                        <!--Notifications
+                        -->
+                        <li class="Notifications-container new comment"><a href="#" class="Notifications-item">
+                            <picture class="Notifications-avatar">
+                              <source srcset="https://randomuser.me/api/portraits/med/women/34.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/women/34.jpg" alt="Marc Howard" width="50" height="50">
+                            </picture>
+                            <div class="Notifications-preview">
+                              <div class="Notifications-author"><span>Taylor Howard</span></div>
+                              <div class="Notifications-snippet"><span>ha comentado tu publicado </span></div>
+                            </div></a></li>
+                        <li class="Notifications-container new follows"><a href="#" class="Notifications-item">
+                            <picture class="Notifications-avatar">
+                              <source srcset="https://randomuser.me/api/portraits/med/women/41.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/women/41.jpg" alt="Marc Howard" width="50" height="50">
+                            </picture>
+                            <div class="Notifications-preview">
+                              <div class="Notifications-author"><span>Bessie Henry</span></div>
+                              <div class="Notifications-snippet"><span>ha comenzado a seguirte</span></div>
+                            </div></a></li>
+                        <li class="Notifications-container like"><a href="#" class="Notifications-item">
+                            <picture class="Notifications-avatar">
+                              <source srcset="https://randomuser.me/api/portraits/med/men/44.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/men/44.jpg" alt="Marc Howard" width="50" height="50">
+                            </picture>
+                            <div class="Notifications-preview">
+                              <div class="Notifications-author"><span>Martin Jimenez</span></div>
+                              <div class="Notifications-snippet"><span>califico positivamente tu post  </span></div>
+                            </div></a></li>
+                        <li class="Notifications-container dislike"><a href="#" class="Notifications-item">
+                            <picture class="Notifications-avatar">
+                              <source srcset="https://randomuser.me/api/portraits/med/men/48.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/men/48.jpg" alt="Marc Howard" width="50" height="50">
+                            </picture>
+                            <div class="Notifications-preview">
+                              <div class="Notifications-author"><span>Warren Olson</span></div>
+                              <div class="Notifications-snippet"><span>califico negativamente tu post  </span></div>
+                            </div></a></li>
+                        <li class="Notifications-container post"><a href="#" class="Notifications-item">
+                            <picture class="Notifications-avatar">
+                              <source srcset="https://randomuser.me/api/portraits/med/men/56.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/men/56.jpg" alt="Marc Howard" width="50" height="50">
+                            </picture>
+                            <div class="Notifications-preview">
+                              <div class="Notifications-author"><span>Pedro Rivera</span></div>
+                              <div class="Notifications-snippet"><span>ha publicado un anuncio  </span></div>
+                            </div></a></li>
+                      </ul>
+                      <div class="Notifications-empty"><span>no hay mas notificaciones...</span></div>
+                    </div>
                   </div>
+                </div>
+              </div>
+            </li>
+            <li class="Menu-option mn">
+              <div class="UserMenu">
+                <div class="Menu-item UserMenu-option"><a href="#" class="Btn Btn--transparentR UserMenu-dropM prevent"><span class="icon-menu"></span></a><a href="#" class="UserMenu-dropD Btn Btn--transparentR prevent">
+                    <picture class="UserMenu-avatar ">
+                      <source srcset="https://randomuser.me/api/portraits/med/men/88.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/men/88.jpg" alt="Fernando Barnes" width="50" height="50">
+                    </picture><span class="UserMenu-name">Fernando</span></a>
+                  <ul class="UserMenu-layout">
+                    <li class="UserMenu-item"><a href="#" class="UserMenu-a"><span class="icon flaticon-user"> </span><span>Perfil</span></a></li>
+                    <li class="UserMenu-item"><a href="#" class="UserMenu-a"><span class="icon flaticon-coment"></span><span>Inicio</span></a></li>
+                    <li class="UserMenu-item"><a href="#" class="UserMenu-a"><span class="icon flaticon-confg"></span><span>Configuración</span></a></li>
+                    <li class="UserMenu-item"><a href="#" class="UserMenu-a"><span class="icon flaticon-logout"></span><span>salir</span></a></li>
+                  </ul>
                 </div>
               </div>
             </li>
@@ -90,5 +143,8 @@
         </nav>
       </div>
     </header>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/public/js/app.js"></script>
   </body>
 </html>

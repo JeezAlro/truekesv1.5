@@ -1,19 +1,48 @@
 @import 'nib'
 greenflat = #8DC63F
-blueflat = #3A8EBF
+dgreenflat = #2D8B42
+blueflat = #009EDF
 dblueflat = #0C5C86
+blueflatf = #112C4A
 dgrayflat = #3D4351
-redflat = #F84545
+redflat = #DD4B39
+dredflat = #BA0613
 yellowflat = #F0C42C
+dyellowflat = #FFA200
 grayflat = #CCCCCC
 lgrayflat = #F9F9F9
-
+blackflat = #181D1F
+@font-face {
+	font-family: "Flaticon";
+	src: url("./fonts/flaticon.eot");
+	src: url("./fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("./fonts/flaticon.woff") format("woff"),
+	url("./fonts/flaticon.ttf") format("truetype"),
+	url("./fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
 @import 'normalize.styl'
 @import 'btns.styl'
 @import './header/styles.styl'
-@import './search/styles.styl'
-@import './menu/styles.styl'
 
 
+*
+	box-sizing border-box
 body
+	min-width 320px
 	background white
+	font-size 16px
+	
+.mobile
+	display block
+.display-block
+	display block
+.display-flex
+	display flex
+.display-none
+	display none
+.dd-none
+	display block
+.margin-none
+	margin 0

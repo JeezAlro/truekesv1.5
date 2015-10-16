@@ -1,0 +1,13 @@
+div(class="Notif")
+	div(class="Menu-item Notif-option")
+		a(href="#" class="Btn Btn--transparentR prevent")
+			span( class="flaticon-message")
+			span(class="notifcount pending") 1
+		div(class="Notif-layout")
+			include ../messages/template.jade
+	div(class="Menu-item Notif-option")
+		a(href="#" class="Btn Btn--transparentR prevent")
+			span( class="flaticon-bell")
+			span(class="notifcount pending") 2
+		div(class="Notif-layout")
+			include ../notifications/template.jade

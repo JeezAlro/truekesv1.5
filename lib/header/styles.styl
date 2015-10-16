@@ -1,11 +1,22 @@
-greenflat = #8DC63f
-blueflat = #3A8EBF
+greenflat = #8DC63F
+dgreenflat = #2D8B42
+blueflat = #009EDF
 dblueflat = #0C5C86
+blueflatf = #112C4A
 dgrayflat = #3D4351
-redflat = #F84545
+redflat = #DD4B39
+dredflat = #BA0613
 yellowflat = #F0C42C
+dyellowflat = #FFA200
 grayflat = #CCCCCC
 lgrayflat = #F9F9F9
+blackflat = #181D1F
+@import './search/styles.styl'
+@import './menu/styles.styl'
+@import './notif/styles.styl'
+@import './userMenu/styles.styl'
+@import './messages/styles.styl'
+@import './notifications/styles.styl'
 .Header
 	position relative
 	background yellowflat
@@ -15,6 +26,7 @@ lgrayflat = #F9F9F9
 
 	&-left
 		width 20%
+		min-width 55px
 		background lgrayflat
 		position relative
 		&:after
@@ -25,13 +37,21 @@ lgrayflat = #F9F9F9
 			left 100%
 			top 0
 	&-right
+		min-width 265px
 		padding-left 50px
 		background dgrayflat
 		width 80%
 		display flex
 		flex-direction column
 .Logo
-	margin 0 auto
-	padding-left .5em		
-	
+	margin 0 
+	display block
+	width 100%
+	height 50px
+	text-align center		
+@media(min-width 1280px)
+	.Header
+		&-right
+			flex-direction row
+			padding-left 60px	
 	

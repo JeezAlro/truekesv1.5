@@ -1,0 +1,76 @@
+greenflat = #8DC63F
+dgreenflat = #2D8B42
+blueflat = #009EDF
+dblueflat = #0C5C86
+blueflatf = #112C4A
+dgrayflat = #3D4351
+redflat = #DD4B39
+dredflat = #BA0613
+yellowflat = #F0C42C
+dyellowflat = #FFA200
+grayflat = #CCCCCC
+ngrayflat = #EBEEF4
+lgrayflat = #F9F9F9
+blackflat = #181D1F
+.Messages
+	padding 0
+	display flex
+	flex-direction column
+	height 100%
+	justify-content space-between
+	&-wrap
+		padding 0
+	&-container 
+		display flex
+		padding 4px
+		height 58px
+		position relative
+		border-bottom 1px solid grayflat
+		&.new
+			background ngrayflat
+			&:after
+				position absolute
+				content "nuevo"
+				color white
+				font-size .8em
+				font-weight bold
+				background dyellowflat
+				height 1em
+				line-height 1em
+				padding .2em
+				border-radius 4px
+				right 4px
+				
+	&-item
+		color blackflat
+		display flex
+		text-decoration none
+		height 50px
+		width 100%
+		justify-content space-between
+	&-avatar
+		min-width 50px
+	&-preview
+		padding .2em
+		flex-grow 1
+		overflow hidden
+		display flex
+		flex-direction column
+		justify-content space-around
+	&-author
+		font-weight bold
+	&-snippet
+		white-space nowrap
+		height 1em
+		overflow hidden
+		text-overflow ellipsis
+	&-empty
+		font-weight bold
+		text-align center
+		flex-grow 1
+		display flex
+		flex-direction column
+		justify-content center	 
+	
+		
+		

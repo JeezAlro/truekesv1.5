@@ -1,0 +1,106 @@
+greenflat = #8DC63F
+dgreenflat = #2D8B42
+blueflat = #009EDF
+dblueflat = #0C5C86
+blueflatf = #112C4A
+dgrayflat = #3D4351
+redflat = #DD4B39
+dredflat = #BA0613
+yellowflat = #F0C42C
+dyellowflat = #FFA200
+grayflat = #CCCCCC
+lgrayflat = #F9F9F9
+blackflat = #181D1F
+
+.UserMenu
+	min-width 50px
+	&-option
+		min-width 50px
+		display flex
+		&.active
+			background blackflat
+			>.UserMenu-layout
+				display block
+				width 100%
+				font-size 16px
+				overflow inherit
+	&-dropM
+		display block
+		margin-bottom 0
+	&-dropD
+		display none
+		margin-bottom 0
+	&-avatar
+		width 50px
+		margin-right .5em
+		height 50px
+		border-radius 50%
+	&-layout
+		color white
+		width 0px
+		overflow hidden
+		max-width 154px
+		position absolute
+		list-style none
+		top 100%
+		right 0
+		padding .5em 0 
+		background blackflat
+		transition width .3s, min-width .3s, max-width .3s, display .3s
+		display hidden
+	&-item
+		color white
+		text-decoration none
+	&-a
+		padding 0 .5em
+		display flex
+		height 3em
+		line-height 3em
+		color white
+		text-decoration none
+		transition all .3s
+		
+		&:hover
+			background rgba(white, .1)
+		>.icon
+			&:before
+				font-size .8em
+				line-height 1em
+				margin-right .5em
+.icon-menu
+	display block
+	transition all .3s
+	&:before
+		content "\e01e"
+		font-family Flaticon
+		font-size 20px
+		font-style normal
+	&.active
+		transform: rotate(180deg)
+		&:before
+			content "\e007"
+@media (min-width 560px)
+	.UserMenu
+		&-dropM
+			display none
+		&-dropD
+			display flex
+		&-option
+			position relative
+			&.active
+				>.UserMenu-layout
+					width 190px
+		&-layout
+			width 0px
+			max-width 190px
+		&-a
+			padding 0 1em
+			>.icon 
+				&:before
+					font-size 1em
+					line-height 1em
+					margin-right .5em
+				
+		
+	
+		

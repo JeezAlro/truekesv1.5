@@ -1,0 +1,23 @@
+nav(class="Menu")
+  //
+    menu without logging
+  ul(class="Menu-container display-none")
+    li(class="Menu-option")
+      a(href="#", class="Btn Btn--blueR")
+        span(class="Menu-btntext") Publicar
+        span(class="flaticon-post3 margin-none")
+    li(class="Menu-option")
+      a(href="#", class="Btn Btn--greenR")
+        span(class="") Ingresar
+        span(class="flaticon-user margin-none")
+  //
+    menu at login
+  ul(class="Menu-container")
+    li(class="Menu-option")
+      a(href="#", class="Btn Btn--blueR")
+        span(class="Menu-btntext") Publicar
+        span(class="flaticon-post3 margin-none")
+    li(class="Menu-option")
+      include ../notif/template.jade
+    li(class="Menu-option mn")
+      include ../userMenu/template.jade

@@ -10,27 +10,41 @@ yellowflat = #F0C42C
 dyellowflat = #FFA200
 grayflat = #CCCCCC
 lgrayflat = #F9F9F9
+blackflat = #181D1F
 
 btn(colorA = grayflat, colorB = dgrayflat, width = 100px)
 	background colorA
-	border-bottom 4px solid colorB
 	width width
 	&:before
 		background colorB
 .Btn
 	position relative
-	font-weight bold
 	color white
-	margin 2px 0
+	text-decoration none
+	margin-bottom 2px
 	transform translateZ(0)
 	backface-visibility: hidden
 	padding 0 .5em
 	box-sizing border-box
 	text-align center
-	line-height 46px
-	height 46px
+	line-height 50px
+	height 50px
 	display inline-block
 	transition all .2s
+	>.notifcount
+		position absolute
+		top 1px
+		right 4px
+		font-size .9em
+		font-weight bold
+		line-height 1em
+		padding .2em
+		background redflat
+		display none
+		border-radius 4px
+		&.pending
+			display block
+		
 	&:before
 		content ""
 		position absolute
@@ -44,6 +58,7 @@ btn(colorA = grayflat, colorB = dgrayflat, width = 100px)
 		transition all 0.2s
 		opacity 0
 		transition-timing-function ease-out
+		
 	&:hover
 		color white
 		&:before
@@ -60,6 +75,7 @@ btn(colorA = grayflat, colorB = dgrayflat, width = 100px)
 		btn(grayflat, dgrayflat, 200px)
 	&.Btn--grayR
 		btn(grayflat, dgrayflat, 100%)
+		min-width 50px
 	&.Btn--redXS
 		btn(redflat, dredflat, 46px)
 	&.Btn--redS
@@ -70,6 +86,7 @@ btn(colorA = grayflat, colorB = dgrayflat, width = 100px)
 		btn(redflat, dredflat, 200px)
 	&.Btn--redR
 		btn(redflat, dredflat, 100%)
+		min-width 50px
 	&.Btn--greenXS
 		btn(greenflat, dgreenflat, 46px)
 	&.Btn--greenS
@@ -79,7 +96,8 @@ btn(colorA = grayflat, colorB = dgrayflat, width = 100px)
 	&.Btn--greenL
 		btn(greenflat, dgreenflat, 200px)
 	&.Btn--greenR
-		btn(greenflat, dgreenflat, 100%)	
+		btn(greenflat, dgreenflat, 100%)
+		min-width 50px	
 	&.Btn--blueXS
 		btn(blueflat, dblueflat, 46px)
 	&.Btn--blueS
@@ -90,6 +108,7 @@ btn(colorA = grayflat, colorB = dgrayflat, width = 100px)
 		btn(blueflat, dblueflat, 200px)
 	&.Btn--blueR
 		btn(blueflat, dblueflat, 100%)
+		min-width 50px
 	&.Btn--dblueXS
 		btn(dblueflat, blueflatf, 46px)
 	&.Btn--dblueS
@@ -100,6 +119,7 @@ btn(colorA = grayflat, colorB = dgrayflat, width = 100px)
 		btn(dblueflat, blueflatf, 200px)
 	&.Btn--dblueR
 		btn(dblueflat, blueflatf, 100%)
+		min-width 50px
 	&.Btn--yellowXS
 		btn(yellowflat, dyellowflat, 46px)
 	&.Btn--yellowS
@@ -110,4 +130,22 @@ btn(colorA = grayflat, colorB = dgrayflat, width = 100px)
 		btn(yellowflat, dyellowflat, 200px)
 	&.Btn--yellowR
 		btn(yellowflat, dyellowflat, 100%)
+		min-width 50px
+	&.Btn--transparentXS
+		btn(transparent, blackflat, 46px)
+		border none
+	&.Btn--transparentS
+		btn(transparent, blackflat, 100px)
+		border none
+	&.Btn--transparentM
+		btn(transparent, blackflat, 150px)
+		border none
+	&.Btn--transparentL
+		btn(transparent, blackflat, 200px)
+		border none
+	&.Btn--transparentR
+		btn(transparent, blackflat, 100%)
+		border none
+		min-width 50px
+
 			
