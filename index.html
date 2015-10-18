@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Truekes El Salvador</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./public/css/fonts/flaticon.css">
     <link rel="stylesheet" href="./public/css/styles.css">
   </head>
@@ -19,6 +20,8 @@
       </div>
       <div class="Header-right">
         <div class="Search">
+          <!--Search 
+          -->
           <form action="" class="Search-form">
             <select title="Selecciona una categoría para limitar la búsqueda" id="Search-select" name="Search-select" class="Search-select">
               <option seleted="slected" value="0">Todo </option>
@@ -44,6 +47,8 @@
             <li class="Menu-option"><a href="#" class="Btn Btn--blueR"><span class="Menu-btntext">Publicar</span><span class="flaticon-post3 margin-none"></span></a></li>
             <li class="Menu-option">
               <div class="Notif">
+                <!--notifications panel
+                -->
                 <div class="Menu-item Notif-option"><a href="#" class="Btn Btn--transparentR prevent"><span class="flaticon-message"></span><span class="notifcount pending">1</span></a>
                   <div class="Notif-layout">
                     <div class="Messages">
@@ -126,6 +131,8 @@
             </li>
             <li class="Menu-option mn">
               <div class="UserMenu">
+                <!--user menu options
+                -->
                 <div class="Menu-item UserMenu-option"><a href="#" class="Btn Btn--transparentR UserMenu-dropM prevent"><span class="icon-menu"></span></a><a href="#" class="UserMenu-dropD Btn Btn--transparentR prevent">
                     <picture class="UserMenu-avatar ">
                       <source srcset="https://randomuser.me/api/portraits/med/men/88.jpg" width="50" height="50"><img srcset="https://randomuser.me/api/portraits/med/men/88.jpg" alt="Fernando Barnes" width="50" height="50">
@@ -143,6 +150,41 @@
         </nav>
       </div>
     </header>
+    <section class="Layout">
+      <div class="Layout-landing">
+        <div class="Welcome">
+          <div class="Welcome-contariner">
+            <div class="Welcome-anchor">
+              <div class="Welcome-text">Compra o vende lo que quieras</div><a href="#" class="Btn Btn--greenR Welcome-btn ">Inicia ahora</a>
+              <div>o</div><a href="#" class="Btn Btn--blueR Welcome-btn">Publica gratis</a>
+            </div>
+          </div>
+        </div>
+        <div class="Location">
+          <div class="Location-mobile">
+            <div class="Location-mobileHeader">Encuentra publicados en tu ciudad </div>
+            <div id="Location-mobileDrop" data-scroll="Location-mobileDrop" class="Location-mobileDrop">Selecciona tu ubicación<span class="flaticon-drop icon"></span>
+              <ul id="Location-mobileList" class="Location-mobileList disable">
+                <li class="Location-mobileItem"><a href="#">Ahuachapán</a></li>
+                <li class="Location-mobileItem"><a href="#">Santa Ana</a></li>
+                <li class="Location-mobileItem"><a href="#">Sonsonate</a></li>
+                <li class="Location-mobileItem"><a href="#">La Libertad</a></li>
+                <li class="Location-mobileItem"><a href="#">Chalatenango</a></li>
+                <li class="Location-mobileItem"><a href="#">Cuscatlán</a></li>
+                <li class="Location-mobileItem"><a href="#">San Salvador</a></li>
+                <li class="Location-mobileItem"><a href="#">La Paz</a></li>
+                <li class="Location-mobileItem"><a href="#">Cabañas</a></li>
+                <li class="Location-mobileItem"><a href="#">San Vicente</a></li>
+                <li class="Location-mobileItem"><a href="#">Usulután</a></li>
+                <li class="Location-mobileItem"><a href="#">San Miguel</a></li>
+                <li class="Location-mobileItem"><a href="#">Morazán</a></li>
+                <li class="Location-mobileItem"><a href="#">La Unión</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="./public/js/app.js"></script>

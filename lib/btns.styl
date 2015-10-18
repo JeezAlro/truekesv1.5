@@ -1,5 +1,5 @@
 greenflat = #8DC63F
-dgreenflat = #2D8B42
+dgreenflat = #5BBC2E
 blueflat = #009EDF
 dblueflat = #0C5C86
 blueflatf = #112C4A
@@ -30,7 +30,6 @@ btn(colorA = grayflat, colorB = dgrayflat, width = 100px)
 	line-height 50px
 	height 50px
 	display inline-block
-	transition all .2s
 	>.notifcount
 		position absolute
 		top 1px
@@ -76,6 +75,9 @@ btn(colorA = grayflat, colorB = dgrayflat, width = 100px)
 	&.Btn--grayR
 		btn(grayflat, dgrayflat, 100%)
 		min-width 50px
+		color blackflat
+		&:hover
+			color white
 	&.Btn--redXS
 		btn(redflat, dredflat, 46px)
 	&.Btn--redS

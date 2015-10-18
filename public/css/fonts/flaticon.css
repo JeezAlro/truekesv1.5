@@ -76,63 +76,66 @@ font-style: normal;
 .flaticon-like:before {
 	content: "\e014";
 }
-.flaticon-fb:before {
+.flaticon-location:before {
 	content: "\e015";
 }
-.flaticon-fav:before {
+.flaticon-fb:before {
 	content: "\e016";
 }
-.flaticon-menu1:before {
+.flaticon-fav:before {
 	content: "\e017";
 }
-.flaticon-message2:before {
+.flaticon-menu1:before {
 	content: "\e018";
 }
-.flaticon-message3:before {
+.flaticon-message2:before {
 	content: "\e019";
 }
-.flaticon-calendar1:before {
+.flaticon-message3:before {
 	content: "\e01a";
 }
-.flaticon-post1:before {
+.flaticon-calendar1:before {
 	content: "\e01b";
 }
-.flaticon-post2:before {
+.flaticon-post1:before {
 	content: "\e01c";
 }
-.flaticon-post3:before {
+.flaticon-post2:before {
 	content: "\e01d";
 }
-.flaticon-menu2:before {
+.flaticon-post3:before {
 	content: "\e01e";
 }
-.flaticon-search:before {
+.flaticon-menu2:before {
 	content: "\e01f";
 }
-.flaticon-smartphone:before {
+.flaticon-search:before {
 	content: "\e020";
 }
-.flaticon-message:before {
+.flaticon-smartphone:before {
 	content: "\e021";
 }
-.flaticon-telephone:before {
+.flaticon-message:before {
 	content: "\e022";
 }
-.flaticon-tikc:before {
+.flaticon-telephone:before {
 	content: "\e023";
 }
-.flaticon-trash:before {
+.flaticon-tikc:before {
 	content: "\e024";
 }
-.flaticon-twitter:before {
+.flaticon-trash:before {
 	content: "\e025";
 }
-.flaticon-user:before {
+.flaticon-twitter:before {
 	content: "\e026";
 }
-.flaticon-world:before {
+.flaticon-user:before {
 	content: "\e027";
 }
-.flaticon-yt:before {
+.flaticon-world:before {
 	content: "\e028";
+}
+.flaticon-yt:before {
+	content: "\e029";
 }

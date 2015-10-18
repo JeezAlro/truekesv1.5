@@ -4,10 +4,12 @@ html(lang="es")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
 		title Truekes El Salvador
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700', rel='stylesheet', type='text/css')
 		link(rel="stylesheet", href="./public/css/fonts/flaticon.css")
 		link(rel="stylesheet", href="./public/css/styles.css")
 	body
-		include ./header/template.jade										
+		include ./header/template.jade
+		include ./layout/template.jade									
 		script(src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js", async)
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
 		script(type="text/javascript" src="./public/js/app.js")
