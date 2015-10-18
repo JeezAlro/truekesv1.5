@@ -12,23 +12,31 @@ function prueba(e){
 	console.log('jejee')
 }
 function addActive(e){
+	$id_Activate = '#'+$(this).attr('data-activate')
 	$(this).toggleClass('active')
-	$(this).children('.disable, .active').toggleClass('disable active')
+	$($id_Activate).toggleClass('active')
 }
 function notification(e){
 	e.stopPropagation()
-	$parents = $(this).parents('*')
+	$parents = $(this).parents('body')
 	$(this).toggleClass('active')
 	$(this).find('.icon-menu').toggleClass('active')
 	$(this).parents('.Menu-option').siblings().find('*').removeClass('active')
 	$(this).siblings().removeClass('active')
 	$(this).find('.notifcount').removeClass('pending')
-	$parents.click(close)
+	$parents.one('click',close)
+	console.log('jajaj')
+
+
 }
 function close(e){
 	e.stopPropagation()
-	$(this).find('*').removeClass('active')
+	$('body').find('*').removeClass('active')
 	console.log('click out')
+
+	
+	
+	
 }
 function preventDefault(e){
 	e.preventDefault()
