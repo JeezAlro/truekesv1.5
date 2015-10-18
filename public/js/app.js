@@ -12,7 +12,6 @@ function prueba(e){
 	console.log('jejee')
 }
 function addActive(e){
-	e.stopPropagation()
 	$(this).toggleClass('active')
 	$(this).children('.disable, .active').toggleClass('disable active')
 }
