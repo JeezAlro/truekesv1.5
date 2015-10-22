@@ -1,0 +1,9 @@
+div(class="Location")
+	div(class="Location-mobile")
+		div(class="Location-mobileHeader") Encuentra publicados en tu ciudad 
+		div(id="Location-mobileDrop",class="Location-mobileDrop", data-scroll="Location-mobileDrop", data-activate="Location-mobileList") Selecciona tu ubicación
+			span(class="flaticon-drop icon")
+			ul(id="Location-mobileList",class="Location-mobileList")
+				each l in ['Ahuachapán','Santa Ana','Sonsonate','La Libertad', 'Chalatenango','Cuscatlán','San Salvador','La Paz','Cabañas','San Vicente','Usulután','San Miguel','Morazán','La Unión']
+					li(class="Location-mobileItem")
+						a(href="#")=l

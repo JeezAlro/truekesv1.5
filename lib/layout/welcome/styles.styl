@@ -1,0 +1,51 @@
+greenflat = #8DC63F
+dgreenflat = #00C96D
+blueflat = #009EDF
+dblueflat = #0C5C86
+blueflatf = #112C4A
+dgrayflat = #3D4351
+redflat = #DD4B39
+dredflat = #BA0613
+yellowflat = #F0C42C
+dyellowflat = #FFA200
+grayflat = #CCCCCC
+lgrayflat = #F9F9F9
+blackflat = #181D1F
+.Welcome
+	background-color rgba(dgrayflat, 1)
+	&-container
+		background rgba(blackflat, 0)
+		padding 1em
+		min-height 200px
+		display flex
+		flex-direction column
+		font-weight 300
+		text-decoration none
+		font-size 1.5em
+		color lgrayflat
+		text-align center
+		flex-grow 1
+		display flex
+		flex-direction column
+		justify-content center
+@media(min-width 768px)
+	.Welcome
+		background-image url(../media/images/sprites/covers2.jpg)
+		background-size cover
+		background-repeat no-repeat
+		display flex
+		justify-content flex-end
+		min-height 500px
+		background-position center
+		&-container
+			max-width 40%
+			color blackflat
+			background rgba(lgrayflat, .9)
+			&:hover
+				background rgba(lgrayflat,.95)
+@media(min-width 1300px)
+	.Welcome
+		width 50%
+				
+	
+	
