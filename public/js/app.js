@@ -30,7 +30,7 @@ function notification(e){
 
 }
 function close(e){
-	e.stopPropagation()
+	
 	$('body').find('*').removeClass('active')
 	console.log('click out')
 
