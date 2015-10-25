@@ -35,17 +35,24 @@ blackflat = #181D1F
 		background-repeat no-repeat
 		display flex
 		justify-content flex-end
-		min-height 500px
+		min-height 350px
 		background-position center
 		&-container
-			max-width 40%
+			max-width 45%
 			color blackflat
 			background rgba(lgrayflat, .9)
 			&:hover
 				background rgba(lgrayflat,.95)
+@media(min-width 1024px)
+	.Welcome
+		flex-grow 1
+		min-height 400px
 @media(min-width 1300px)
 	.Welcome
-		width 50%
+		&-container
+			max-width 40%
+
+		
 				
 	
 	

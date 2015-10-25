@@ -26,18 +26,23 @@ function notification(e){
 	$(this).find('.notifcount').removeClass('pending')
 	$parents.one('click',close)
 	console.log('jajaj')
-
-
 }
 function close(e){
 	
 	$('body').find('*').removeClass('active')
-	console.log('click out')
-
-	
-	
-	
+	console.log('click out')	
 }
 function preventDefault(e){
 	e.preventDefault()
+}
+function showMap(n){
+	zone = 'zone'+n
+	title = $('#'+zone).attr('title')
+	$('#MapSprites').addClass(zone)
+	$('#LocationTitle').html(title)
+}
+function resetMap(n){
+	zone = 'zone'+n
+	$('#MapSprites').removeClass(zone)
+	$('#LocationTitle').html('todo El Salvador')
 }

@@ -12,6 +12,9 @@ grayflat = #CCCCCC
 ngrayflat = #EBEEF4
 lgrayflat = #F9F9F9
 blackflat = #181D1F
+map(x , y)
+	background-position x y
+	opacity .5
 .Location
 	background lgrayflat
 	color blackflat
@@ -55,4 +58,65 @@ blackflat = #181D1F
 				color blueflat
 				position absolute
 				left .5em
-		
+	&-desktop
+		background lgrayflat
+		display none
+		&Name
+			color blueflat
+		&Map
+			width 450px
+			height 260px
+			background-image url(../media/images/sprites/maps/sv/mapsv.png)
+			background-repeat no-repeat
+			background-size 450px 260px
+			margin-left auto
+			margin-right auto
+			&Sprites 
+				width 450px
+				height 260px
+				background-image url(../media/images/sprites/maps/sv/sv_sprites.png)
+				background-size 3600px 520px
+				map(-3150px,0)
+				&.zone1
+					map(0,0)
+				&.zone2
+					map(-450px,0)
+				&.zone3
+					map(-900px,0)
+				&.zone4
+					map(-1350px,0)
+				&.zone5
+					map(-1800px,0)
+				&.zone6
+					map(-2250px,0)
+				&.zone7
+					map(-2700px,0)
+				&.zone8
+					map(0,-260px)
+				&.zone9
+					map(-450px,-260px)
+				&.zone10
+					map(-900px,-260px)
+				&.zone11
+					map(-1350px,-260px)
+				&.zone12
+					map(-1800px,-260px)
+				&.zone13
+					map(-2250px,-260px)
+				&.zone14
+					map(-2700px,-260px)
+@media(min-width 660px)
+	.Location
+		&-mobileList
+			column-count 2
+			column-gap 0
+@media(min-width 1024px)
+	.Location
+		display flex
+		&-mobile
+			display none
+		&-desktop
+			display flex
+			flex-direction column
+			justify-content space-around
+			min-width 500px

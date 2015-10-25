@@ -7,3 +7,13 @@ div(class="Location")
 				each l in ['Ahuachapán','Santa Ana','Sonsonate','La Libertad', 'Chalatenango','Cuscatlán','San Salvador','La Paz','Cabañas','San Vicente','Usulután','San Miguel','Morazán','La Unión']
 					li(class="Location-mobileItem")
 						a(href="#")=l
+	div(class="Location-desktop")
+		div(class="Location-desktopHeader") Encuentra publicados en 
+			span(id="LocationTitle" class="Location-desktopName") todo El Salvador
+		div(class="Location-desktopMap")
+			div(id="MapSprites", class="Location-desktopMapSprites")
+				img(src="./public/media/images/sprites/maps/sv/sv0.png", alt="El Salvador", usemap="#sv")
+
+	//
+		Areas Map El Salvador
+	include map.html

@@ -1,0 +1,83 @@
+commit 5e10a615749e4e58e0ace596e3e5a5ba691f0bf4
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Thu Oct 22 00:16:46 2015 -0600
+
+    Modificacion welcome
+
+commit e1ab41e2663a0a1613b4abd8cf94e0c453b7be61
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Thu Oct 22 00:12:35 2015 -0600
+
+    Modificacion welcome
+
+commit 337b0b5e5405a0bd550a0fbbd8a3ebd63f8768d1
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Thu Oct 22 00:10:13 2015 -0600
+
+    Modificacion welcome
+
+commit 5ad9451a067f6465c8aee8064e5939042ec39552
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Sun Oct 18 00:52:40 2015 -0600
+
+    Modifiacdo add layout
+
+commit 09bfe54183f0463cb7c077150556d6949ab3b0cc
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Sat Oct 17 23:39:34 2015 -0600
+
+    Modifiacdo add layout
+
+commit 8ca608d71de2f906de6abd5e537166c5b26f288e
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Sat Oct 17 23:36:52 2015 -0600
+
+    Modifiacdo add layout
+
+commit bc2a20a95807e0930601025b5315ad6864a59521
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Sat Oct 17 23:33:22 2015 -0600
+
+    Modifiacdo add layout
+
+commit ce2d228052bb6113e41eb32c7056371afe166728
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Sat Oct 17 23:26:57 2015 -0600
+
+    Modifiacdo add layout
+
+commit b1825957cc6de35977fe939629ce3bbbe0d288b0
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Fri Oct 16 00:19:21 2015 -0600
+
+    oo
+
+commit 9dd677e6c59abbc8bfa68d8d343f99f70d658da4
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Fri Oct 16 00:04:46 2015 -0600
+
+    oo
+
+commit 771b4dcfa0513f9907fb98504be1676d867a9fd1
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Fri Oct 16 00:04:05 2015 -0600
+
+    oo
+
+commit 3ac284492a0f76271dd407a5e4799a72e31065ca
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Thu Oct 15 23:36:12 2015 -0600
+
+    Header actualizado
+
+commit 88ee6939a330234fc166b8fb0b9803746c5239cd
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Thu Oct 15 23:28:45 2015 -0600
+
+    Header termindado
+
+commit 7f4c34b41e771d40ac5d25bcceef3005db615bf4
+Author: Jesus A Lopez <jesus.alberto.lopez@outlook.es>
+Date:   Fri Oct 9 08:34:56 2015 -0600
+
+    Hola
