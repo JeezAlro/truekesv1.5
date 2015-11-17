@@ -1,0 +1,86 @@
+greenflat = #8DC63F
+dgreenflat = #00C96D
+blueflat = #009EDF
+dblueflat = #0C5C86
+blueflatf = #112C4A
+dgrayflat = #3D4351
+redflat = #DD4B39
+dredflat = #BA0613
+yellowflat = #F0C42C
+dyellowflat = #FFA200
+grayflat = #CCCCCC
+ngrayflat = #EBEEF4
+lgrayflat = #F9F9F9
+blackflat = #181D1F
+.Categories
+	&-container
+		padding 0em
+		column-count 1
+		display flex
+		flex-direction column
+	&-header
+		font-weight normal
+		font-size 2em
+		margin none
+		color blackflat
+.Category
+	display inline-block
+	overflow hidden
+	&-link
+		background ngrayflat
+		color blackflat
+		display flex
+		justify-content space-between
+		padding: 0 1em
+		text-decoration none
+	&-title
+		line-height 100px
+		margin 0
+		font-weight normal
+		font-size 1.5em
+	&-iconIndex
+		background-image url('../media/images/sprites/categories.png')
+		display block
+		width 100px
+		height 100px
+		background-size 100px 1200px
+		&.category1
+			background-position-y 0
+		&.category2
+			background-position-y -100px
+		&.category3
+			background-position-y -200px
+		&.category4
+			background-position-y -300px
+		&.category5
+			background-position-y -400px
+		&.category6
+			background-position-y -500px
+		&.category7
+			background-position-y -600px
+		&.category8
+			background-position-y -700px
+		&.category9
+			background-position-y -800px
+		&.category10
+			background-position-y -900px
+		&.category11
+			background-position-y -1000px
+		&.category12
+			background-position-y -1100px
+.Subcategory
+	&-container
+		background lgrayflat
+		margin 0
+		padding 0
+		column-count 2
+		column-gap 0
+	&-title
+		background lgrayflat
+	&-link
+		line-height 2.5em
+		padding 0 1em
+		text-decoration none
+		font-size 1em
+		color blueflat
+		display block
