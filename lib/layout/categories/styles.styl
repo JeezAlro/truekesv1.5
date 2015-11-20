@@ -19,7 +19,7 @@ blackflat = #181D1F
 		display flex
 		flex-direction column
 	&-header
-		font-weight normal
+		font-weight 300
 		font-size 2em
 		margin none
 		color blackflat
@@ -27,16 +27,17 @@ blackflat = #181D1F
 	display inline-block
 	overflow hidden
 	&-link
-		background ngrayflat
+		background white
 		color blackflat
 		display flex
-		justify-content space-between
+		justify-content flex-start
 		padding: 0 1em
 		text-decoration none
+		border-bottom 2px solid blueflat
 	&-title
 		line-height 100px
 		margin 0
-		font-weight normal
+		font-weight 300
 		font-size 1.5em
 	&-iconIndex
 		background-image url('../media/images/sprites/categories.png')
@@ -78,9 +79,32 @@ blackflat = #181D1F
 	&-title
 		background lgrayflat
 	&-link
-		line-height 2.5em
+		line-height 3em
 		padding 0 1em
 		text-decoration none
-		font-size 1em
+		font-size 1.1em
 		color blueflat
 		display block
+		font-weight 300
+@media(min-width 568px)
+	.Categories
+		padding 0 .5em
+		&-container
+			column-count 2
+			column-gap .5em
+			display block
+	.Category
+		width 100%
+		&-link
+			justify-content flex-start
+	.Subcategory
+		&-container
+			column-count 1
+@media(min-width 768px)
+	.Categories
+		&-container
+			column-count 3
+@media(min-width 1280px)
+	.Categories
+		&-container
+			column-count 4
