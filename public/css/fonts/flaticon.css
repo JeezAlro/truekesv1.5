@@ -63,6 +63,7 @@ font-style: normal;
 }
 .flaticon-email:before {
 	content: "\e010";
+	margin-right: .5em
 }
 .flaticon-follows:before {
 	content: "\e011";
@@ -81,6 +82,7 @@ font-style: normal;
 }
 .flaticon-fb:before {
 	content: "\e016";
+	margin-right: .5em
 }
 .flaticon-fav:before {
 	content: "\e017";
@@ -129,6 +131,7 @@ font-style: normal;
 }
 .flaticon-twitter:before {
 	content: "\e026";
+	margin-right:  .5em
 }
 .flaticon-user:before {
 	content: "\e027";

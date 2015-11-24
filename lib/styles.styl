@@ -26,7 +26,7 @@ blackflat = #181D1F
 @import 'btns.styl'
 @import './header/styles.styl'
 @import './layout/styles.styl'
-
+@import './footer/styles.styl'
 
 *
 	box-sizing border-box
@@ -49,3 +49,12 @@ body
 	display block
 .margin-none
 	margin 0
+.grayscale
+	margin-right .5em
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url(grayscale.svg#greyscale); /* Firefox 4+ */
+	filter: gray; /* IE 6-9 */

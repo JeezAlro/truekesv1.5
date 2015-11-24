@@ -1,0 +1,60 @@
+greenflat = #8DC63F
+dgreenflat = #00C96D
+blueflat = #009EDF
+dblueflat = #0C5C86
+blueflatf = #112C4A
+dgrayflat = #3D4351
+redflat = #DD4B39
+dredflat = #BA0613
+yellowflat = #F0C42C
+dyellowflat = #FFA200
+grayflat = #CCCCCC
+ngrayflat = #EBEEF4
+lgrayflat = #F9F9F9
+blackflat = #181D1F
+
+.Footer
+	background blackflat
+	min-height 200px
+	diplay block
+	overflow hidden
+	&-container
+		color white
+	&-columns
+		display flex
+		flex-direction column
+		list-style none
+		padding .5em
+	&-column
+		text-decoration none
+		&-title
+			font-weight 300
+			border-bottom 2px solid dgrayflat
+		&-links
+			list-style none
+			padding 0
+		&-link
+			color white
+			text-decoration none
+			line-height 2em
+			transition all .3s
+			&:hover
+				color blueflat
+	&-end
+		background #090A0C
+	&-copyright
+		max-width 1000px 
+		margin 0
+		line-height 3em
+		color #818181
+		margin-left auto
+		margin-right auto
+@media(min-width 667px)
+	.Footer
+		&-columns
+			margin-left auto
+			margin-right auto
+			max-width 1000px
+			flex-direction row
+			justify-content space-between			
+		
